@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Sprint01 Alura Latam</title>
+</head>
+
+<body>
+    <main>
+
+        <section class="section1">
+
+            <div class="contenedor1">
+
+                <h1 class="logo-alura"><img src="assets/Logo.png" alt=""></h1>
+                <textarea placeholder="Ingresa el texto aqui..." cols="40" rows="8" id="mensaje" required></textarea>
+                <p>&#9888 Solo letras minúsculas y sin acentos</p>
+
+                <div class="botones">
+                    <button onclick="encriptarTexto();" id="encriptar">Encriptar</button>
+                    <button onclick="desencriptar();" id="desencriptar">Desencriptar</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section2" id="texto-final">
+
+            <div id="contenedor2">
+                <h1>
+                    <img src="assets/Muñeco.png">
+                </h1>
+                <h3>
+                    Ningún mensaje fue encontrado
+                </h3>
+                <p>
+                    Ingresa el texto que desees encriptar o desencriptar.
+                </p>
+            </div>
+
+            <button onclick="copiarTexto();" id="copiar-texto">Copiar</button>
+
+        </section>
+
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
